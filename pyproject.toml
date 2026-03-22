@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycoreml"
+version = "0.1.0"
+description = "CoreML inference from Python — powered by Swift & ApplePy"
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+authors = [{name = "Jagtesh Chadha"}]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Swift",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Repository = "https://github.com/jagtesh/pycoreml"
+
+[tool.setuptools.packages.find]
+include = ["pycoreml*"]
