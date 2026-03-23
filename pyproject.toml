@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pycoreml"
-version = "0.2.1"
+version = "0.3.0"
 description = "CoreML inference from Python — powered by Swift & ApplePy"
 readme = "README.md"
 license = {text = "BSD-3-Clause"}

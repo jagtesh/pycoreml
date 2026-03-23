@@ -1,6 +1,15 @@
 {
-  "originHash" : "426c476d3d77eb34e92d44913ec06e81c4ae57f0c7d9cd363d41c283307506fb",
+  "originHash" : "79964405e3f4db6314790fa168bf97ab9f1a10ce523dda677e245f5ed3269521",
   "pins" : [
+    {
+      "identity" : "applepy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jagtesh/ApplePy.git",
+      "state" : {
+        "revision" : "2ebf3859e7e2fc117b25704a69a3ed0d01a60e2c",
+        "version" : "1.1.0"
+      }
+    },
     {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",

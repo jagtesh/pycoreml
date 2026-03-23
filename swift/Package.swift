@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "PyCoreML", type: .dynamic, targets: ["PyCoreML"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/jagtesh/ApplePy.git", from: "1.0.0"),
+        .package(url: "https://github.com/jagtesh/ApplePy.git", from: "1.1.0"),
     ],
     targets: [
         .target(
