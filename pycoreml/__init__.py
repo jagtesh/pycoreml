@@ -19,7 +19,7 @@ if sys.platform != "darwin":
 def _load_native():
     """Load the compiled Swift extension module."""
     pkg_dir = os.path.dirname(os.path.abspath(__file__))
-    so_path = os.path.join(pkg_dir, "pycoreml.so")
+    so_path = os.path.join(pkg_dir, "_native", "pycoreml.so")
 
     if not os.path.exists(so_path):
         raise ImportError(
@@ -28,7 +28,7 @@ def _load_native():
             "  # or: python setup.py build_ext --inplace"
         )
 
-    spec = importlib.util.spec_from_file_location("pycoreml", so_path)
+    spec = importlib.util.spec_from_file_location("pycoreml._native.pycoreml", so_path)
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod
@@ -51,4 +51,4 @@ __all__ = [
     "predict_with_options",
 ]
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"

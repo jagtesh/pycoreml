@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pycoreml"
-version = "0.1.0"
+version = "0.2.0"
 description = "CoreML inference from Python — powered by Swift & ApplePy"
 readme = "README.md"
 license = {text = "BSD-3-Clause"}
@@ -22,3 +22,6 @@ Repository = "https://github.com/jagtesh/pycoreml"
 
 [tool.setuptools.packages.find]
 include = ["pycoreml*"]
+
+[tool.setuptools.package-data]
+pycoreml = ["*.so"]

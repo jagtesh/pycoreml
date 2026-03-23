@@ -1,0 +1,4 @@
+recursive-include swift *.swift
+include swift/Package.swift
+include swift/Package.resolved
+recursive-exclude swift/.build *
