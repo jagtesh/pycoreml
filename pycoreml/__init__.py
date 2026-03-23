@@ -51,4 +51,4 @@ __all__ = [
     "predict_with_options",
 ]
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
